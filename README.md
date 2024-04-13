@@ -1,28 +1,41 @@
-<p align="center">
-  <img src="public/nuv-stacked-color.svg" width="128" height="128" />
-</p>
+# Nuvolaris MastroGPT
 
+Build easily AI applications with MastroGPT!
 
-# React.js MastroGPT Starter ( Vite )
+# Setup
 
-This is a starter template for React.js with MastroGPT bundled with Vite. It includes a sample AI application that uses MastroGPT.
+You can run Nuvolaris Starter: 
+- Online with Codespace 
+- Locally with Docker
 
-## Deploy your own
+## Online Setup 
 
-### Pre-requisites
+- Get a GitHub account
+- Fork this repo in your own account
+- Start it with Codespaces (you have 60 free hours)
+- See below for setup.
 
-- Docker
+## Local Setup 
 
-### Online with Github codespaces
+- Install Docker and VScode in your machine
+- Clone this repo
+- Open it in VSCode
+- Press F1  and the "Reopen in Container"
 
-You can deploy your own React.js + MastroGPT project with a single click using Github codespaces.
+# Environments and Secrets
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/buggyzap/reactjs-starter)
+- Copy the `.env.example` in `.env`
+- Add your secrets there (do not commit them - it is in .gitignore)
+- Add non secrets envirornment variables in packages/.env
+- Pass secrets and environments to your function with `#--param ARGUMENT "$VARIABLE"`
+- Read the secrets as function arguments
 
-### Locally with Docker
+# Development
 
-- Clone this repository
-- Open Visual Studio Code and install Dev containers extensions if you haven't already
-- Open the project in Visual Studio Code
-- Click on the green button in the bottom left corner and select "Reopen in Container"
-- On left menu click on "Nuvolaris" extension and select "Devel"
+Use the Nuvolaris Icon to execute the functions, or use the following commands from the terminal:
+
+- `devel` (or `nuv ide devel` to run a local development environment
+- `deploy` (or `nuv ide deploy`) to deploy everything in cloud
+- `login` (or `nuv ide login`) to login again
+
+Check `nuv ide` subcommand for more options.
